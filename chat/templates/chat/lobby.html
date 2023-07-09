@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lobby</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    
+</head>
+<body>
+    <img id="image"></<img>
+
+    <div class="hover-apple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="187.51" height="200" viewBox="0 0 187.51 200"><defs><style>.f6e390ba-1090-4ded-aea9-435d2daa37ba{fill:#343333;}</style></defs><g id="f5c14de5-6493-449c-aba8-0d85b362f6e7" data-name="Layer 2"><g id="fe593e16-0eb4-46ca-b784-4d4880ee97df" data-name="Layer 1"><path class="f6e390ba-1090-4ded-aea9-435d2daa37ba" d="M184.44,75.3c-12.79-34.87-56.1-47.61-77-39.54C109.72,24.32,114.4,14,124.79,3.65c-2-1-4.86-2.44-7.16-3.65-5.17,3.11-12.18,12.92-14.25,21a83.34,83.34,0,0,0-2.31,13.69c-14-12.5-52-19.33-78.2,1.74-27.84,22.34-28,73-12.55,118C19.1,180,48.4,192.25,74.24,189.71c19.68,8.69,44.84,19.65,71-3.83C175.3,158.91,195.5,105.44,184.44,75.3Z"/></g></g></svg>
+    </div>
+
+    <svg class="tempIndicator tempIndicatorSize" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path class="tempIndicator Circle statusInactive" d="M512 1024C229.7 1024 0 794.3 0 512S229.7 0 512 0s512 229.7 512 512-229.7 512-512 512z m0-938.7C276.7 85.3 85.3 276.7 85.3 512S276.7 938.7 512 938.7 938.7 747.3 938.7 512 747.3 85.3 512 85.3z" />
+        <path class="tempIndicator Triangle statusInactive" d="M434.8 688.2c-7.4 0-14.7-1.9-21.3-5.7-13.2-7.6-21.3-21.7-21.3-37V384c0-15.2 8.1-29.3 21.3-37 13.2-7.6 29.5-7.6 42.7 0l226.5 130.8c13.2 7.6 21.3 21.7 21.3 37 0 15.2-8.1 29.3-21.3 37L456.1 682.5c-6.6 3.9-13.9 5.7-21.3 5.7z m42.7-230.3v113.8l98.5-56.9-98.5-56.9z" />
+    </svg>
+
+    
+    <img id="runBtn" src="{% static 'play.svg' %}" alt="SVG mit img laden" width="200" height="200" onclick="buttonClick('switchRun',id)" >
+    
+    <h1>Lets chat!</h1>
+
+    <form id="form">
+        <input type="text" name="message"/>
+    </form>
+
+    <div id="messages"></div>
+    <script src="{% static 'script.js' %}"></script>
+
+
+  
+</body>
+
+</html>

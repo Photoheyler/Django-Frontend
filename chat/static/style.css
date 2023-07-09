@@ -1,0 +1,40 @@
+.hover-apple path {
+    fill: #5adb2b;
+}
+.hover-apple path:hover {
+	fill: #ed6866;
+}
+.StatusSign 
+{
+    --active:#5adb2b;
+    --inactive:#ff7b00;
+    --error:#ff0000;
+    --initializing:#0033ff;
+}
+.StatusSign:active
+{
+    background-color:#5adb2b;
+}
+.StatusSign:inactive
+{
+    background-color:#ffc400;
+}
+.tempIndicator{
+}
+.tempIndicatorSize{
+    width: 40dp; 
+    height: 40dp; 
+}
+.statusActive{
+    fill: #5adb2b; 
+}
+.statusInactive{
+    fill: #ff0000; 
+}
+:root 
+{
+    --active:#5adb2b;
+    --inactive:#ff7b00;
+    --error:#ff0000;
+    --initializing:#0033ff;
+}

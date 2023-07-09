@@ -1,0 +1,13 @@
+var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+        var ws_path = ws_scheme + '://' + window.location.host + "/ws/image_stream/";
+
+        var socket = new WebSocket(ws_path);
+
+        socket.onmessage = function(event) {
+          var data = JSON.parse(event.data);
+          var image_data = data['image_data'];
+          // Display the image data on the webpage
+        };
+        var image = new Image();
+        image.src = "data:image/png;base64," + image_data;
+        document.body.appendChild(image);
